@@ -5,29 +5,36 @@
   "description": "Automatically advances to the next YouTube Short when the current one ends. Watch Shorts continuously without manual scrolling.",
   "author": "Ross Paxton",
   "homepage_url": "https://github.com/Ropaxyz/FFyoutube-shorts-auto-next",
-
   "icons": {
     "48": "icon-48.png",
-    "96": "icon-96.png",
-    "128": "icon-128.png"
+    "96": "icon-96.png"
   },
-
   "permissions": [
     "*://www.youtube.com/shorts/*"
   ],
-
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/shorts/*"],
-      "js": ["content.js"],
+      "matches": [
+        "*://www.youtube.com/shorts/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ],
-
   "browser_specific_settings": {
     "gecko": {
       "id": "shorts-auto-next@paxton.email",
-      "strict_min_version": "109.0"
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
     }
   }
 }
