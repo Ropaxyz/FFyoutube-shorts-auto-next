@@ -15,7 +15,7 @@ Automatically advances to the next YouTube Short when the current one ends. Say 
 ## Installation
 
 ### From Firefox Add-ons Store
-1. Visit the [Firefox Add-ons page](#) (link coming soon)
+1. Visit the [[Firefox Add-ons page](#) (link coming soon)](https://addons.mozilla.org/en-US/firefox/addon/youtube-shorts-auto-next/)
 2. Click "Add to Firefox"
 3. Confirm the installation
 
@@ -112,3 +112,4 @@ MIT License - feel free to modify and distribute
 - Multiple fallback navigation methods
 - Smart video end detection
 - Firefox support
+
