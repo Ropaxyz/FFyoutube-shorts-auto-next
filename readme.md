@@ -15,7 +15,7 @@ Automatically advances to the next YouTube Short when the current one ends. Say 
 ## Installation
 
 ### From Firefox Add-ons Store
-1. Visit the [[Firefox Add-ons page](#) (link coming soon)](https://addons.mozilla.org/en-US/firefox/addon/youtube-shorts-auto-next/)
+1. Visit the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/youtube-shorts-auto-next/)
 2. Click "Add to Firefox"
 3. Confirm the installation
 
@@ -47,7 +47,7 @@ YouTube Shorts typically loop videos automatically. This extension aggressively 
 ## Privacy
 
 This extension:
--  Only runs on youtube.com/shorts/*
+- Only loads on `youtube.com` pages, and only acts on `/shorts/` URLs
 - Does not collect any data
 -  Does not make external network requests
 -  Does not track your viewing history
@@ -59,7 +59,7 @@ This extension:
 
 ## Compatibility
 
-- Firefox 109.0 or higher
+- Firefox 140.0 or higher (`strict_min_version` in `manifest.json`)
 - Works on desktop YouTube Shorts
 
 ## Debugging
@@ -67,7 +67,7 @@ This extension:
 If the extension isn't working:
 1. Open the Browser Console (Ctrl+Shift+J / Cmd+Shift+J)
 2. Look for messages prefixed with `[ShortsAutoNext]`
-3. Debug mode is enabled by default in v1.1.0 - set `DEBUG = false` in content.js for production
+3. Debug mode is enabled by default - set `DEBUG = false` in content.js for production
 
 ## Known Limitations
 
@@ -95,6 +95,9 @@ Found a bug or have a suggestion? Please [open an issue](https://github.com/Ropa
 MIT License - feel free to modify and distribute
 
 ## Changelog
+
+### Version 1.2.0
+- **Content script now loads on all of `youtube.com`** (previously `/shorts/*` only) so navigating in and out of Shorts is handled correctly
 
 ### Version 1.1.0 (Reliability Update)
 - **Improved loop prevention** - Continuously disables video loop every 50ms
