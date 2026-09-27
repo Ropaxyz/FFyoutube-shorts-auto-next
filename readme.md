@@ -71,7 +71,8 @@ If the extension isn't working:
 
 ## Known Limitations
 
-- Only works on desktop browsers
+- Tested on desktop Firefox. `manifest.json` also declares Firefox for Android
+  (`gecko_android`), but the next-Short behaviour there is untested.
 - Requires JavaScript to be enabled
 - May not work with certain browser extensions that heavily modify YouTube
 - YouTube frequently changes their DOM structure, which may require updates
